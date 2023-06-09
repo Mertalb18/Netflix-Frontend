@@ -1,0 +1,242 @@
+/* ! Resetting start */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+    height: 100%;
+}
+/* ! Resetting end */
+
+/* ! Hero image start */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/arkaplan.jpg);
+    height: 100vh;
+    position: relative;
+}
+/* ! Hero image end */
+
+/* ! Navbar start */
+.nav-logo {
+    width: 200px;
+}
+
+.navbar-toggler {
+    background-color: #4e4e4e8c !important;
+}
+
+.dropdown {
+    float: right;
+}
+/* ! Navbar end */
+
+/* ! Hero-text start */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 80px;
+}
+/* ! Hero-text end */
+
+/* ! Content start */
+.screen-image {
+    width: 80%;
+}
+
+.container-fluid h5 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.container-fluid p {
+    font-size: 22px;
+}
+
+.input-group {
+    width: 60%;
+}
+
+.row img {
+    width: 100%;
+}
+
+.odev12-bg {
+    background-color: gray;
+}
+
+.odev12-btn {
+    padding-inline: 250px;
+}
+
+.odev13-btn {
+    border: 2px solid black;
+    background-color: lavender;
+}
+/* ! Content end */
+
+/* ! FAQ start */
+.accordion {
+    width: 100%;
+    background-color: #4E4E4E;
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.accordion::after {
+    content: "\002B";
+    float: right;
+}
+
+.active::after {
+    content: "\00d7";
+}
+
+.panel {
+    background-color: #4E4E4E;
+    display: none;
+}
+/* ! FAQ end */
+
+/* ! Footer start */
+.footer {
+    color: #B3B3B3;
+}
+
+.footer a {
+    color: #B3B3B3;
+}
+/* ! Footer end */
+
+/* ! Responsive start */
+@media screen and (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .container-fluid h5 {
+        font-size: 40px;
+    }
+    
+    .container-fluid p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .accordion {
+        font-size: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .nav-logo {
+        width: 150px;
+    }
+
+    .hero-text {
+        margin-top: 100px;
+    }
+
+    .odev12-btn {
+        padding-inline: 50px;
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        height: 100vh;
+    }
+
+    .hero-text {
+        margin-top: 20px;
+    }
+
+    .odev10 {
+        margin-top: 100px;
+    }
+
+    .container-fluid {
+        text-align: center;
+    }
+
+    .container-fluid h5 {
+        font-size: 22px;
+    }
+    
+    .container-fluid p {
+        font-size: 12px;
+    }
+
+    .accordion {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .nav-logo {
+        width: 90px;
+    }
+
+    .navbar-toggler {
+        scale: 0.8;
+    }
+
+    .input-group {
+        display: block;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100% !important;
+        padding: 14px 0;
+        margin-bottom: 14px;
+    }
+
+    .form-control::placeholder {
+        padding-left: 12px;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .odev12-logo {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .hero-text {
+        margin-top: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-text h5 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+/* ! Responsive end */
